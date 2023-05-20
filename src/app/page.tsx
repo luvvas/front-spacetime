@@ -1,4 +1,7 @@
 import { User } from "lucide-react";
+import Image from "next/image";
+
+import nlwLogo from "../assets/nlw-spacetime-logo.svg";
 
 export default function Home() {
   return (
@@ -25,6 +28,38 @@ export default function Home() {
             memórias!
           </p>
         </a>
+
+        {/* Hero */}
+        <div className="space-y-5">
+          <Image src={nlwLogo} alt="NLW spacetime" />
+          <div className="max-w-[420px] space-y-1">
+            <h1 className="mt-5 text-5xl font-bold leading-tight text-gray-50">
+              Sua cápsula do tempo
+            </h1>
+            <p className="text-lg leading-relaxed">
+              Colecione momentos marcantes da sua jornada e compartilhe com o
+              mundo!
+            </p>
+          </div>
+
+          <a
+            className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt text-sm uppercase leading-none text-black hover:bg-green-600"
+            href=""
+          >
+            CADASTRAR LEMBRANÇA
+          </a>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-sm leading-relaxed text-gray-200">
+          Feito por{" "}
+          <a
+            className="underline hover:text-gray-100"
+            href="https://github.com/luvvas"
+          >
+            Lucas Machado
+          </a>
+        </div>
       </div>
 
       {/* Right */}
@@ -32,7 +67,12 @@ export default function Home() {
         <div className="flex flex-1 items-center justify-center">
           <p className="w-[360px] text-center leading-relaxed">
             Você ainda não registrou nenhuma lembrança, comece a{" "}
-            <a href="" className="underline hover:text-gray-50">
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer"
+              className="underline hover:text-gray-50"
+            >
               criar agora
             </a>
             !
