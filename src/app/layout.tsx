@@ -46,9 +46,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Hero />
             <Copyright />
           </div>
-
           {/* Right */}
-          <div className="flex flex-col">{children}</div>
+          <div className="flex max-h-screen flex-col overflow-y-scroll">
+            {children}
+          </div>
         </main>
       </body>
     </html>
