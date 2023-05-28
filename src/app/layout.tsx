@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col p-16">{children}</div>
+          <div className="flex flex-col">{children}</div>
         </main>
       </body>
     </html>
